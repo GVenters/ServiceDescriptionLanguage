@@ -1,0 +1,26 @@
+scalar: Date
+scalar: URI
+
+type Service
+{ 
+title: String!
+description: 
+meshTerms: [String]
+isAlgorithmic: Boolean
+staffGroups: [String]
+owners: [String]
+status: String
+locality: String
+specialities: [String]
+standards: [String]
+certificationsRequired[Certification]
+
+}
+
+type Certification
+{
+name: String
+version: String
+publishedDate: Date
+}
+
